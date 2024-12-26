@@ -23,14 +23,14 @@ namespace PizzaMama.Pages
 
         public void OnGet()
         {
-            var pizza = new Pizza() {
-                Nom = "PizzaBoissée",
-                Prix = 13,
-                Vegetarien = false,
-                Ingredient = "Sauce Crème, Fromage, Escalope, Poivron Rouge"
+         /*   var pizza = new Pizza() {
+                Nom = "PizzaVégétarien",
+                Prix = 10,
+                Vegetarien = true,
+                Ingredient = "Sauce Crème, Fromage, Falafel, Oeuf, Choukchouka"
             };
             dataContext.Pizzas.Add(pizza);
-            dataContext.SaveChanges();
+            dataContext.SaveChanges();  */
         }
     }
 }
