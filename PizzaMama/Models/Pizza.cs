@@ -1,16 +1,23 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
+
 namespace PizzaMama.Models
 {
 	public class Pizza
 	{
-        internal string nom;
-        internal int prix;
+		/*internal string nom;
+		internal int prix; */
 
         public int PizzaId { get; set; }
-		public string Nom { get; set; }
+        public string Nom { get; set; }
 		public float Prix { get; set; }
-		public bool Vegetarien { get; set; }
-		public string Ingredient { get; set; }
+
+        [Display(Name = "Végétarien")]
+        public bool Vegetarien { get; set; }
+
+        [Display(Name = "Ingrédient")]
+        public string Ingredient { get; set; }
 	}
 }
 
